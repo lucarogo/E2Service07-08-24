@@ -317,7 +317,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             font-family: Arial, sans-serif;
             overflow: hidden;
         }
-
+    
         #unique-footer .container {
             display: flex;
             justify-content: space-around;
@@ -327,7 +327,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             opacity: 0;
             animation: fadeIn 1.5s ease-in-out forwards;
         }
-
+    
         #unique-footer .column {
             flex: 1;
             padding: 10px;
@@ -336,80 +336,84 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             transform: translateY(30px);
             animation: slideIn 1s ease-in-out forwards;
         }
-
+    
         #unique-footer .column:nth-child(1) { animation-delay: 0.3s; }
         #unique-footer .column:nth-child(2) { animation-delay: 0.6s; }
         #unique-footer .column:nth-child(3) { animation-delay: 0.9s; }
         #unique-footer .column:nth-child(4) { animation-delay: 1.2s; }
         #unique-footer .column:nth-child(5) { animation-delay: 1.5s; }
-
+    
         #unique-footer h3 {
             border-bottom: 2px solid #555;
             padding-bottom: 10px;
             margin-bottom: 15px;
+            font-size: 16px; /* Tamaño de la fuente ajustado */
         }
-
+    
         #unique-footer a {
             color: #bbb;
             text-decoration: none;
             display: block;
             margin-bottom: 10px;
             transition: color 0.3s;
+            font-size: 14px; /* Tamaño de la fuente ajustado */
         }
-
+    
         #unique-footer a:hover {
             color: white;
             transform: translateX(5px);
         }
-
+    
         @keyframes fadeIn {
             to { opacity: 1; }
         }
-
+    
         @keyframes slideIn {
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
+    
         @media (max-width: 768px) {
             #unique-footer .container {
                 flex-direction: column;
-                align-items: center;
+                align-items: center;    
             }
         }
     </style>
+    
     <div class="container">
         <div class="column">
             <h3>Nosotros</h3>
             <a href="index.html#one">Quiénes somos</a>
-            <a href="index.html">Misión</a>
-            <a href="index.html">visión</a>
+            <a href="/Nosotros/Nosotros.html#vision">Misión</a>
+            <a href="/Nosotros/Nosotros.html#vision">visión</a>
         </div>
         <div class="column">
             <h3>Productos</h3>
-            <a href="index.html">Categoría 1</a>
-            <a href="index.html">Categoría 2</a>
-            <a href="index.html">Categoría 3</a>
+            <a href="/shopping/category.php?cid=7">Camaras de Seg.</a>
+            <a href="/shopping/category.php?cid=5">Intercomunicadores</a>
+            <a href="/shopping/category.php?cid=8">Controles de Acceso</a>
         </div>
         <div class="column">
             <h3>Nuestros servicios</h3>
-            <a href="index.html">Servicio 1</a>
-            <a href="index.html">Servicio 2</a>
-            <a href="index.html">Servicio 3</a>
+            <a href="/Servicios/SoporteTC.html">Soporte Tecnico</a>
+            <a href="/Servicios/Intercomyvideoip.html">Videoporteros IP</a>
+            <a href="/Servicios/Camaras de  Seguridad.html">Camaras de Seg.</a>
         </div>
         <div class="column">
             <h3>Dirección</h3>
-            <a href="index.html">Sucursal 1</a>
-            <a href="index.html">Sucursal 2</a>
-            <a href="index.html">Sucursal 3</a>
+            <a href="https://maps.app.goo.gl/FtYqaJePMv1R5aEK6"> Hacienda Chacracerro - Trapiche, Lima 15316</a>
+            <a style="color: #333333;"> * </a>
+            
+            
         </div>
         <div class="column">
             <h3>Contacto</h3>
-            <a href="index.html">Correo electrónico</a>
-            <a href="index.html">Teléfono</a>
-            <a href="index.html">Redes sociales</a>
+            <a href="mailto: Ventas@e2serviceperu.com">Ventas@e2serviceperu.com</a>
+            <a href="tel:+51906253834">+51 906 253 834</a>
+            <a href="https://www.facebook.com/E2Serviceperu">E2Serviceperu</a>
         </div>
     </div>
 </footer>
